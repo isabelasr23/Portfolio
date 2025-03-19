@@ -235,7 +235,7 @@ text-decoration: none;
 }
 
 .projects-title {
-    text-align: left;
+    text-align: center;
     font-size: 32px; 
     color: white; 
     text-shadow:0 4px 8px rgba(0, 0, 0, 0.2) ;
@@ -335,6 +335,9 @@ footer {
 
     .about-me {
         grid-template-columns: 1fr;
+    }
+    .about-me-title{
+        text-align: center;
     }
 
     .about-me-img, .about-me-text {

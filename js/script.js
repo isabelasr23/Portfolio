@@ -180,7 +180,7 @@ function validateField(field) {
 }
 
 if (contactForm) {
-  const fields = contactForm.querySelectorAll("input, textarea");
+  const fields = contactForm.querySelectorAll("input:not([type='hidden']), textarea");
   const status = contactForm.querySelector(".form-status");
 
   fields.forEach((field) => {
@@ -193,12 +193,11 @@ if (contactForm) {
   });
 
   contactForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-
     const validationResults = Array.from(fields).map((field) => validateField(field));
     const isValid = validationResults.every(Boolean);
 
     if (!isValid) {
+      event.preventDefault();
       if (status) {
         status.textContent = "Revise os campos destacados.";
       }
@@ -206,9 +205,7 @@ if (contactForm) {
     }
 
     if (status) {
-      status.textContent = "Mensagem pronta para envio. Obrigada pelo contato!";
+      status.textContent = "Enviando mensagem...";
     }
-
-    contactForm.reset();
   });
 }

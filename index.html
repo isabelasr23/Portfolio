@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Isabela Soares, UI/UX Designer e estudante de Sistemas de Informação."
+    />
+    <title>Isabela Soares | Portfólio</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+    <header class="site-header" aria-label="Cabeçalho">
+      <nav class="nav-pill" aria-label="Navegação principal">
+        <a class="brand" href="#hero" aria-label="Página inicial">Isabela<span>.</span></a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a class="nav-contact" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section-reveal" id="hero" aria-labelledby="hero-title">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">UI/UX Designer &bull; Sistemas de Informação</p>
+          <h1 id="hero-title">
+            Transformando ideias<br />
+            em <span>experiências digitais.</span>
+          </h1>
+          <p class="hero-subtitle">Apaixonada por criar interfaces intuitivas, acessíveis e funcionais.</p>
+          <a class="primary-button" href="#projetos">
+            Ver projetos
+            <span class="arrow-icon" aria-hidden="true"></span>
+          </a>
+        </div>
+      </section>
+
+      <section class="about section-light section-reveal" id="sobre" aria-labelledby="about-title">
+        <div class="container">
+          <p class="section-kicker">Sobre mim</p>
+          <h2 id="about-title">Biografia &amp; Experiências</h2>
+
+          <div class="about-grid">
+            <img
+              class="profile-photo"
+              src="assets/images/profile-isabela.png"
+              alt="Isabela Soares em frente a um mural de comunidade e tecnologia"
+            />
+            <div class="about-text">
+              <h3>Olá! Eu sou <span>Isabela Soares.</span></h3>
+              <p>
+                Minha jornada começou com a curiosidade por entender como tecnologia e pessoas se conectam.
+                Hoje, trabalho na interseção entre <strong>design e desenvolvimento</strong>, criando soluções que
+                são ao mesmo tempo visualmente cuidadosas e tecnicamente sólidas.
+              </p>
+              <p>
+                Tenho experiência na criação de wireframes, protótipos de alta fidelidade, design systems e
+                interfaces responsivas, além de conhecimentos em <strong>Java, Spring Boot, HTML, CSS, JavaScript e PostgreSQL.</strong>
+              </p>
+              <p>
+                Meu objetivo é usar o design como ponte entre as necessidades humanas e as possibilidades da
+                tecnologia, criando produtos digitais que as pessoas realmente amam usar.
+              </p>
+            </div>
+          </div>
+
+          <div class="experience-grid" aria-label="Experiências e formação">
+            <article class="window-card">
+              <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+              <h3>Estágiaria de UI/UX</h3>
+              <p class="card-company">CITEC - Centro de Inovação e Tecnologia CESMAC</p>
+              <p class="card-date">2025 - Atual</p>
+              <p>
+                Criação de wireframes e protótipos de alta fidelidade no Figma. Desenvolvimento de interfaces web
+                e design systems. Aplicação de princípios de UX e colaboração com equipes multidisciplinares.
+              </p>
+              <ul class="tags" aria-label="Competências da experiência">
+                <li>Figma</li>
+                <li>Design System</li>
+                <li>Prototipação</li>
+                <li>UX Research</li>
+              </ul>
+            </article>
+
+            <article class="window-card">
+              <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+              <h3>Estudante de Sistemas de Informação</h3>
+              <p class="card-company">CESMAC</p>
+              <p class="card-date">2024 - 2027</p>
+              <p>
+                Formação que une fundamentos de tecnologia, design e gestão. Desenvolvimento de projetos acadêmicos
+                com foco em soluções digitais centradas no usuário.
+              </p>
+              <ul class="tags" aria-label="Competências da formação">
+                <li>Java</li>
+                <li>Spring</li>
+                <li>Postgre SQL</li>
+                <li>Análise de Sistemas</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills section-dark section-reveal" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <p class="section-kicker">Competências</p>
+          <h2 id="skills-title">Habilidades &amp; Ferramentas</h2>
+
+          <div class="filter-bar" role="group" aria-label="Filtrar habilidades">
+            <button class="filter-button is-active" type="button" data-filter="todas">Todas</button>
+            <button class="filter-button" type="button" data-filter="desenvolvimento">Desenvolvimento</button>
+            <button class="filter-button" type="button" data-filter="ferramentas">Ferramentas</button>
+            <button class="filter-button" type="button" data-filter="design">Design</button>
+          </div>
+
+          <ul class="skills-grid" aria-label="Lista de habilidades">
+            <li class="skill-item" data-category="desenvolvimento"><img src="assets/skills/skill-java.png" alt="Java" /></li>
+            <li class="skill-item" data-category="desenvolvimento"><img src="assets/skills/skill-spring.png" alt="Spring" /></li>
+            <li class="skill-item" data-category="desenvolvimento"><img src="assets/skills/skill-html.png" alt="HTML5" /></li>
+            <li class="skill-item" data-category="desenvolvimento"><img src="assets/skills/skill-css.png" alt="CSS3" /></li>
+            <li class="skill-item" data-category="desenvolvimento"><img src="assets/skills/skill-javascript.png" alt="JavaScript" /></li>
+            <li class="skill-item" data-category="desenvolvimento"><img src="assets/skills/skill-postgresql.png" alt="PostgreSQL" /></li>
+            <li class="skill-item" data-category="ferramentas"><img src="assets/skills/skill-git.png" alt="Git" /></li>
+            <li class="skill-item" data-category="ferramentas"><img src="assets/skills/skill-github.png" alt="GitHub" /></li>
+            <li class="skill-item" data-category="ferramentas"><img src="assets/skills/skill-vscode.png" alt="Visual Studio Code" /></li>
+            <li class="skill-item" data-category="ferramentas"><img src="assets/skills/skill-intellij.png" alt="IntelliJ IDEA" /></li>
+            <li class="skill-item" data-category="ferramentas"><img src="assets/skills/skill-notion.png" alt="Notion" /></li>
+            <li class="skill-item" data-category="design"><img src="assets/skills/skill-figma.png" alt="Figma" /></li>
+            <li class="skill-item" data-category="design"><img src="assets/skills/skill-wireframing.png" alt="Wireframing" /></li>
+            <li class="skill-item" data-category="design"><img src="assets/skills/skill-prototyping.png" alt="Prototipação" /></li>
+            <li class="skill-item" data-category="design"><img src="assets/skills/skill-design-system.png" alt="Design System" /></li>
+            <li class="skill-item" data-category="design"><img src="assets/skills/skill-ux-research.png" alt="UX Research" /></li>
+            <li class="skill-item" data-category="design"><img src="assets/skills/skill-user-flows.png" alt="User Flows" /></li>
+            <li class="skill-item" data-category="design"><img src="assets/skills/skill-design-thinking.png" alt="Design Thinking" /></li>
+            <li class="skill-item" data-category="design"><img src="assets/skills/skill-accessibility.png" alt="Acessibilidade" /></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="projects section-light section-reveal" id="projetos" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="projects-head">
+            <div>
+              <p class="section-kicker">Portfólio</p>
+              <h2 id="projects-title">Projetos em Destaque</h2>
+            </div>
+            <div class="carousel-controls" aria-label="Controles do carrossel de projetos">
+              <button class="carousel-button carousel-prev" type="button" aria-label="Projeto anterior">
+                <img src="assets/icons/arrow.svg" alt="" aria-hidden="true" />
+              </button>
+              <button class="carousel-button carousel-next" type="button" aria-label="Próximo projeto">
+                <img src="assets/icons/arrow.svg" alt="" aria-hidden="true" />
+              </button>
+            </div>
+          </div>
+
+          <div class="projects-carousel" tabindex="0" aria-label="Carrossel de projetos">
+            <div class="projects-grid">
+              <article class="project-card">
+                <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                <span class="project-tag">CITEC</span>
+                <p class="project-type">Projeto - Redesign de Interface</p>
+                <h3>Suavemente</h3>
+                <a class="project-image" href="suavemente.html" aria-label="Ver mais sobre o projeto Suavemente">
+                  <img src="assets/projects/suavemente.png" alt="Preview do redesign do aplicativo Suavemente" />
+                </a>
+                <a class="project-link" href="suavemente.html">Ver mais <img class="project-arrow" src="assets/icons/arrow.svg" alt="" aria-hidden="true" /></a>
+              </article>
+
+              <article class="project-card">
+                <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                <span class="project-tag">Pessoal</span>
+                <p class="project-type">Projeto Pessoal</p>
+                <h3>Design System</h3>
+                <a class="project-image" href="em-andamento.html" aria-label="Ver mais sobre o projeto Design System">
+                  <img src="assets/projects/design-system.png" alt="Preview do design system Isabela Soares" />
+                </a>
+                <a class="project-link" href="em-andamento.html">Ver mais <img class="project-arrow" src="assets/icons/arrow.svg" alt="" aria-hidden="true" /></a>
+              </article>
+
+              <article class="project-card">
+                <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                <span class="project-tag project-tag-muted">Acadêmico</span>
+                <p class="project-type">Projeto Acadêmico</p>
+                <h3>Ecomigo</h3>
+                <a class="project-image project-image-contain" href="ecomigo.html" aria-label="Ver mais sobre o projeto Ecomigo">
+                  <img src="assets/projects/ecomigo-cover.png" alt="Preview de telas do projeto Ecomigo" />
+                </a>
+                <a class="project-link" href="ecomigo.html">Ver mais <img class="project-arrow" src="assets/icons/arrow.svg" alt="" aria-hidden="true" /></a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section-dark section-reveal" id="contato" aria-labelledby="contact-title">
+        <div class="container">
+          <p class="section-kicker">Contato</p>
+          <h2 id="contact-title">Vamos trabalhar juntos?</h2>
+          <p class="contact-copy">Estou sempre aberta a novos projetos, oportunidades e conversas sobre design e tecnologia.</p>
+
+          <div class="contact-links" aria-label="Canais de contato">
+            <a href="mailto:Isabelasr.dev@gmail.com">
+              <span aria-hidden="true">@</span>
+              Isabelasr.dev@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/isabelasr23" target="_blank" rel="noreferrer">
+              <span aria-hidden="true">in</span>
+              Isabelasr23
+            </a>
+            <a href="https://github.com/Isabelasr23" target="_blank" rel="noreferrer">
+              <span aria-hidden="true"><img class="contact-icon" src="assets/icons/github.svg" alt="" /></span>
+              Isabelasr23
+            </a>
+          </div>
+
+          <form class="contact-form" novalidate>
+            <div class="form-row">
+              <label>
+                Nome
+                <input type="text" name="nome" placeholder="Seu nome" autocomplete="name" required minlength="2" />
+                <span class="field-error" aria-live="polite"></span>
+              </label>
+              <label>
+                E-mail
+                <input type="email" name="email" placeholder="seu@email.com" autocomplete="email" required />
+                <span class="field-error" aria-live="polite"></span>
+              </label>
+            </div>
+            <label>
+              Assunto
+              <input type="text" name="assunto" placeholder="Do que se trata?" required minlength="3" />
+              <span class="field-error" aria-live="polite"></span>
+            </label>
+            <label>
+              Mensagem
+              <textarea name="mensagem" placeholder="Conte me sobre seu projeto ou oportunidade..." required minlength="10"></textarea>
+              <span class="field-error" aria-live="polite"></span>
+            </label>
+            <div class="form-status" aria-live="polite"></div>
+            <button class="primary-button submit-button" type="submit">
+              Enviar Mensagem
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M22 2 11 13" />
+                <path d="m22 2-7 20-4-9-9-4Z" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Isabela Soares Rego.</p>
+      <a href="mailto:Isabelasr.dev@gmail.com">Isabelasr.dev@gmail.com</a>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

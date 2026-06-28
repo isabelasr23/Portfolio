@@ -494,6 +494,8 @@ section {
 
 .filter-bar {
   --filter-indicator-left: 5px;
+  --filter-indicator-top: 5px;
+  --filter-indicator-height: 34px;
   --filter-indicator-width: 64px;
   background: #3a455b;
   border-radius: 999px;
@@ -508,12 +510,15 @@ section {
   background: #f0f3fb;
   border-radius: 999px;
   content: "";
-  height: calc(100% - 10px);
+  height: var(--filter-indicator-height);
   left: 0;
   position: absolute;
-  top: 5px;
-  transform: translateX(var(--filter-indicator-left));
-  transition: transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1), width 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
+  top: 0;
+  transform: translate(var(--filter-indicator-left), var(--filter-indicator-top));
+  transition:
+    height 0.28s cubic-bezier(0.2, 0.8, 0.2, 1),
+    transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1),
+    width 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
   width: var(--filter-indicator-width);
 }
 

@@ -21,7 +21,9 @@ function moveFilterIndicator() {
   }
 
   filterBar.style.setProperty("--filter-indicator-left", `${activeButton.offsetLeft}px`);
+  filterBar.style.setProperty("--filter-indicator-top", `${activeButton.offsetTop}px`);
   filterBar.style.setProperty("--filter-indicator-width", `${activeButton.offsetWidth}px`);
+  filterBar.style.setProperty("--filter-indicator-height", `${activeButton.offsetHeight}px`);
 }
 
 if (menuToggle && navLinks) {

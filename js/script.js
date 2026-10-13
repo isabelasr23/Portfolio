@@ -11,6 +11,7 @@ const prototypeTrack = document.querySelector(".prototype-track");
 const prototypePrev = document.querySelector(".prototype-prev");
 const prototypeNext = document.querySelector(".prototype-next");
 const prototypeDots = document.querySelectorAll(".prototype-dots button");
+const translate = (text) => window.portfolioI18n?.t(text) || text;
 
 function moveFilterIndicator() {
   const filterBar = document.querySelector(".filter-bar");
@@ -57,6 +58,8 @@ filterButtons.forEach((button) => {
 
 moveFilterIndicator();
 window.addEventListener("resize", moveFilterIndicator);
+document.addEventListener("portfolio:languagechange", moveFilterIndicator);
+document.fonts.ready.then(moveFilterIndicator);
 
 if (projectCarousel && carouselPrev && carouselNext) {
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -110,7 +113,7 @@ if (prototypeTrack && prototypePrev && prototypeNext && prototypeDots.length) {
     for (let index = 0; index < total; index += 1) {
       const dot = document.createElement("button");
       dot.type = "button";
-      dot.setAttribute("aria-label", `Visualização ${index + 1}`);
+      dot.setAttribute("aria-label", `${translate("Visualização")} ${index + 1}`);
       dot.addEventListener("click", () => updatePrototype(index));
       prototypeDotsWrap.appendChild(dot);
     }
@@ -136,6 +139,11 @@ if (prototypeTrack && prototypePrev && prototypeNext && prototypeDots.length) {
   prototypePrev.addEventListener("click", () => updatePrototype(activePrototype - 1));
   prototypeNext.addEventListener("click", () => updatePrototype(activePrototype + 1));
   mobileQuery.addEventListener("change", setupPrototypeCarousel);
+  document.addEventListener("portfolio:languagechange", () => {
+    prototypeDotsWrap?.querySelectorAll("button").forEach((dot, index) => {
+      dot.setAttribute("aria-label", `${translate("Visualização")} ${index + 1}`);
+    });
+  });
   setupPrototypeCarousel();
 }
 
@@ -174,7 +182,7 @@ function validateField(field) {
   let message = "";
 
   if (!field.validity.valid) {
-    message = validationMessages[field.name] || "Preencha este campo.";
+    message = translate(validationMessages[field.name] || "Preencha este campo.");
   }
 
   setFieldError(field, message);
@@ -201,13 +209,21 @@ if (contactForm) {
     if (!isValid) {
       event.preventDefault();
       if (status) {
-        status.textContent = "Revise os campos destacados.";
+        status.dataset.message = "Revise os campos destacados.";
+        status.textContent = translate(status.dataset.message);
       }
       return;
     }
 
     if (status) {
-      status.textContent = "Enviando mensagem...";
+      status.dataset.message = "Enviando mensagem...";
+      status.textContent = translate(status.dataset.message);
     }
+  });
+  document.addEventListener("portfolio:languagechange", () => {
+    fields.forEach((field) => {
+      if (field.classList.contains("is-invalid")) validateField(field);
+    });
+    if (status?.dataset.message) status.textContent = translate(status.dataset.message);
   });
 }

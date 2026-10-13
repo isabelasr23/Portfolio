@@ -1,0 +1,57 @@
+.oken-page { background: #f8fafc; font-family: Poppins, sans-serif; }
+.oken-page .section-light { background: #f8fafc; }
+.oken-page .section-dark { background: #0f172a; }
+.oken-page .project-hero { padding-top: 140px; min-height: 400px; padding-bottom: 64px; }
+.oken-page .project-hero h1 { font-size: 56px; font-weight: 700; color: #e2e8f0; }
+.oken-page .project-hero p:last-child { font-size: 20px; font-weight: 600; color: #94a3b8; }
+.oken-page .project-eyebrow { color: #818cf8; font-weight: 600; letter-spacing: 0; }
+.oken-page .project-pill { font-size: 12px; font-weight: 600; padding: 4px 8px; background: #e2e8f0; color: #334155; }
+.oken-page .project-detail { padding: 48px 0 80px; }
+.oken-page .project-info-grid { gap: 56px; align-items: start; }
+.oken-page .project-detail h2 { font-size: 28px; font-weight: 700; line-height: 1.5; color: #1e293b; margin-bottom: 4px; }
+.oken-page .project-detail p, .oken-page .project-detail li { font-family: "DM Sans", sans-serif; font-size: 16px; font-weight: 500; line-height: 1.32; color: #64748b; }
+.oken-page h3 { font-family: "DM Sans", sans-serif; font-size: 20px; font-weight: 700; color: #334155; margin: 0 0 8px; }
+.oken-page .project-objective { margin-top: 28px; }
+.oken-research { margin: 40px -12px 0; padding: 12px; background: #eef2ff; border-radius: 12px; }
+.oken-three-columns { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 12px; align-items: start; }
+.oken-research-card { padding: 12px; background: white; border-radius: 12px; }
+.oken-page .oken-three-columns h3 { display: flex; gap: 12px; align-items: center; }
+.oken-icon { display: inline-flex; padding: 12px; background: #eef2ff; border-radius: 8px; flex: 0 0 auto; }
+.oken-icon img { display: block; }
+.oken-research-card ul { padding-left: 24px; margin: 0; }
+.oken-decisions { margin-top: 48px; }
+.oken-decisions .oken-three-columns { margin-top: 24px; }
+.oken-decisions .oken-icon { border-radius: 50%; }
+.oken-evolution { margin-top: 48px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.oken-evolution > *, .oken-versions > * { min-width: 0; }
+.oken-versions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+.oken-versions figure { margin: 0; padding: 12px; background: #eef2ff; border-radius: 12px; }
+.oken-versions figure:first-child { opacity: .8; }
+.oken-versions figcaption { font: 700 14px "DM Sans", sans-serif; text-align: center; text-transform: uppercase; color: #1e293b; margin-bottom: 4px; }
+.oken-versions figure div { width: 170px; max-width: 100%; height: 167px; overflow: hidden; margin: auto; }
+.oken-versions img { width: 100%; height: auto; display: block; }
+.oken-page .prototype-section { margin-top: 48px; }
+.oken-page .prototype-card { border-color: #eef2ff; border-radius: 12px; min-height: 557px; padding: 36px 70px 60px; margin-top: 10px; }
+.oken-page .prototype-phone { height: 460px; max-height: 460px; width: 225px; max-width: 100%; filter: none; }
+.oken-page .prototype-arrow img { width: auto; height: auto; filter: none; transform: none; }
+.oken-learning { margin-top: 48px; }
+.oken-learning .project-info-grid { margin-top: 12px; gap: 24px; }
+.oken-page .site-footer { background: #090f1b; }
+@media (max-width: 1023px) {
+  .oken-three-columns { gap: 16px; }
+  .oken-page .oken-three-columns h3 { flex-wrap: wrap; }
+  .oken-evolution { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 767px) {
+  .oken-page .project-hero { padding-top: 140px; }
+  .oken-page .project-hero h1 { font-size: 44px; }
+  .oken-page .project-hero p:last-child { font-size: 18px; }
+  .oken-page .project-detail h2 { font-size: 26px; }
+  .oken-three-columns { grid-template-columns: 1fr; }
+  .oken-page .oken-three-columns h3 { flex-wrap: nowrap; }
+  .oken-page .project-info-grid { gap: 28px; }
+  .oken-versions { gap: 12px; }
+  .oken-versions figcaption { font-size: 12px; }
+  .oken-page .prototype-card { min-height: auto; padding: 36px 34px 60px; }
+  .oken-page .prototype-phone { flex: 0 0 100%; width: 100%; height: 460px; padding: 0 8px; }
+}
